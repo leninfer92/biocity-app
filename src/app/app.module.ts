@@ -11,6 +11,8 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { VehiculoComponent } from './components/vehiculo/vehiculo.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ChoferComponent } from './components/chofer/chofer.component';
+import { KilometrajeComponent } from './components/kilometraje/kilometraje.component';
+import { CombustibleComponent } from './components/combustible/combustible.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ChoferComponent } from './components/chofer/chofer.component';
     UsuarioComponent,
     VehiculoComponent,
     ErrorComponent,
-    ChoferComponent
+    ChoferComponent,
+    KilometrajeComponent,
+    CombustibleComponent
   ],
   imports: [
     BrowserModule,
