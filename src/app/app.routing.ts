@@ -8,6 +8,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { ChoferComponent } from "./components/chofer/chofer.component";
 import { KilometrajeComponent } from "./components/kilometraje/kilometraje.component";
 import { CombustibleComponent } from "./components/combustible/combustible.component";
+
 const appRoutes:Routes=[
     {path: 'login', component: LoginComponent},
     {path: 'usuario', component: UsuarioComponent},
