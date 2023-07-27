@@ -14,6 +14,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { ChoferComponent } from './components/chofer/chofer.component';
 import { KilometrajeComponent } from './components/kilometraje/kilometraje.component';
 import { CombustibleComponent } from './components/combustible/combustible.component';
+import { AdministradorComponent } from './components/administrador/administrador.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CombustibleComponent } from './components/combustible/combustible.compo
     ErrorComponent,
     ChoferComponent,
     KilometrajeComponent,
-    CombustibleComponent
+    CombustibleComponent,
+    AdministradorComponent
   ],
   imports: [
     BrowserModule,
