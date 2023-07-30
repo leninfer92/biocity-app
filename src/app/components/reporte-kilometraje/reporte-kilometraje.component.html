@@ -1,36 +1,23 @@
 <div class="container">
-<table class="table table-hover">
+  <table class="table table-hover">
     <thead>
       <tr>
         <th>Fecha</th>
-    <th>Número</th>
-    <th>Placa</th>
-    <th>Kilometraje inicio</th>
-    <th>Detalle inicio</th>
-    <th>Kilometraje fin</th>
-    <th>Detalle fin</th>
+        <th>Número</th>
+        <th>Kilometraje inicio</th>
+        <th>Detalle inicio</th>
+        <th>Kilometraje fin</th>
+        <th>Detalle fin</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>20-07-2023</td>
-        <td>01</td>
-        <td>PDY7666</td>
-        <td>200.000</td>
-        <td>Sin novedades</td>
-        <td>300.000</td>
-        <td>Llanta derecha se esta bajando</td>
-       
-      </tr>
-      <tr>
-        <td>20-07-2023</td>
-        <td>01</td>
-        <td>PDY7666</td>
-        <td>200.000</td>
-        <td>Sin novedades</td>
-        <td>300.000</td>
-        <td>Llanta derecha se esta bajando</td>
-       
+      <tr *ngFor="let activity of activitiesList">
+        <td>{{activity.created_at}}</td>
+        <td>{{activity.vehiculo_id}}</td>
+        <td>{{activity.kilometraje_inicio}}</td>
+        <td>{{activity.estado_inicio}}</td>
+        <td>{{activity.kilometraje_fin}}</td>
+        <td>{{activity.estado_fin}}</td>
       </tr>
     </tbody>
   </table>

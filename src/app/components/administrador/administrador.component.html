@@ -6,7 +6,7 @@
                 <img class="card-img-top" src="../../../assets/img/recolector.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Vehiculos</h5>
-                  <p class="card-text">El total de vehiculos es: **CONSULTA A LA BASE DE DATOS LA CANTIDAD DE VEHICULOS**</p>
+                  <p class="card-text">El total de vehiculos es: {{countCars}}</p>
                   <a [routerLink]="['/vehiculo']" class="btn btn-primary">Registrar</a>
                   
                 </div>
@@ -17,7 +17,7 @@
           <img class="card-img-top" src="../../../assets/img/combustible.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Combustible</h5>
-            <p class="card-text">Total de ordenes de combustible**CONSULTA A LA BASE DE DATOS LA CANTIDAD DE VEHICULOS**</p>
+            <p class="card-text">Total de ordenes de combustible: {{countOrders}}</p>
             <a [routerLink]="['/validar-combustible']" class="btn btn-secondary">Validar</a>
           </div>
         </div>

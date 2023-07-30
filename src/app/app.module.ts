@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { routing } from './app.routing';
 
 
@@ -19,6 +20,8 @@ import { ValidarCombustibleComponent } from './components/validar-combustible/va
 import { EstadoVehiculoComponent } from './components/estado-vehiculo/estado-vehiculo.component';
 import { ReporteKilometrajeComponent } from './components/reporte-kilometraje/reporte-kilometraje.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { VehiculosService } from './services/vehiculos.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,9 +44,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     routing
   ],
-  providers: [],
+  providers: [VehiculosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
