@@ -1,52 +1,43 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
-@import url('https://fonts.googleapis.com/css2?family=Baskerville&display=swap');
-body{height: 900px;}
-header {
-	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
-	text-align: center;
-	width: 100%;
-	height: auto;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-	border-radius: 0 0 85% 85% / 30%;
-}
-header .overlay{
-	width: 100%;
-	height: 100%;
-	padding: 5px;
-	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, #1B6B93 10%, #A2FF86 100%);
+body {
+	height: 1500px;
+	
+  }
   
-}
-
-h1 {
-	font-family: 'Baskerville', serif;
-	font-size: 80px;
-	margin-bottom: 30px;
-}
-
-h3, p {
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
-}
-
-button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
-}
-button:hover{
-	cursor: pointer;
-}
-img{
-    width: 200px;
-    position: relative;
-}
+  .offset {
+	margin-top: 0;
+	padding-top: 270px;
+	text-align: center;
+	transition: .3s;
+  }
+  
+  .header {
+	position: fixed;
+	width: 100%;
+	height: 250px;
+	font-weight: bold;
+	text-align: center;
+	background: url(https://cdn.pixabay.com/photo/2019/11/22/17/15/drop-of-water-4645249_1280.jpg);
+	transition: .3s;
+	
+	&.small {
+	  height: 70px;
+	  box-shadow: 0 0 5px rgba(black, .2);
+	  & ~ .offset {
+		padding-top: 140px;
+	  }
+	  .header_logo {
+		padding-top: 10px;
+		font-size: 20px;
+		text-shadow: none;
+	  }
+	}
+  }
+  
+  .header_logo {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding-top: 0px;
+	font-size: 50px;
+	text-shadow: 3px 4px rgba(black, .1);
+	transition: .3s;
+  }

@@ -7,7 +7,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Vehiculos</h5>
                   <p class="card-text">El total de vehiculos es: **CONSULTA A LA BASE DE DATOS LA CANTIDAD DE VEHICULOS**</p>
-                  <a href="#" class="btn btn-primary">Registrar vehiculo</a>
+                  <a [routerLink]="['/vehiculo']" class="btn btn-primary">Registrar</a>
+                  
                 </div>
               </div>
           </div>
@@ -17,7 +18,17 @@
           <div class="card-body">
             <h5 class="card-title">Combustible</h5>
             <p class="card-text">Total de ordenes de combustible**CONSULTA A LA BASE DE DATOS LA CANTIDAD DE VEHICULOS**</p>
-            <a href="#" class="btn btn-secondary">Validar ordenes</a>
+            <a [routerLink]="['/validar-combustible']" class="btn btn-secondary">Validar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="../../../assets/img/kilometraje.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Consulta de registro de kilometraje</h5>
+            <p class="card-text">Consultar el registro de kilometraje de los vehiculos</p>
+            <a [routerLink]="['/reporte-kilometraje']" class="btn btn-info">Consultar</a>
           </div>
         </div>
       </div>
@@ -27,7 +38,7 @@
           <div class="card-body">
             <h5 class="card-title">Estado de los vehiculos</h5>
             <p class="card-text">Consultar el estado de los vehiculos</p>
-            <a href="#" class="btn btn-secondary">Consultar</a>
+            <a [routerLink]="['/estado-vehiculo']" class="btn btn-dark">Consultar</a>
           </div>
         </div>
       </div>

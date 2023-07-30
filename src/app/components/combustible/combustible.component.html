@@ -91,7 +91,7 @@
                     <td>Item</td>
                     <td>Item</td>
                     <td>Item</td>
-                    <td><button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></td>
+                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar"><i class="fa fa-pencil"></i></button> <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></td>
                 </tr>
             </tbody>    
 
@@ -99,7 +99,61 @@
 </div>
 
 
+<div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Editar orden de combustible</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="col-3">
+                            <label >Número</label>
+                            <input type="number" class="form-control" id="">
+                          </div>
+                            <div class="col-3">
+                              <label>Km Carga</label>
+                              <input type="number" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="col-4">
+                              <label>Galones</label>
+                              <input type="number" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="col-5">
+                              <label>Tipo</label>
+                    
+                              <select class="form-control">
+                                  <option>Selección opción</option>
+                                  <option value="0">Diesel</option>
+                                  <option value="1">Gasolina</option>
+                                  
+                              </select>
+                            </div>
+                            <br>
+                          <button class="btn btn-success">Registrar</button>
+                        </div>
+                      </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script>
+    var modalId = document.getElementById('modalId');
+
+    modalId.addEventListener('show.bs.modal', function (event) {
+          // Button that triggered the modal
+          let button = event.relatedTarget;
+          // Extract info from data-bs-* attributes
+          let recipient = button.getAttribute('data-bs-whatever');
+
+        // Use above variables to manipulate the DOM
+    });
+</script>
 
 
   

@@ -62,17 +62,33 @@
       <td>Sin novedades</td>
       <td>300.000</td>
       <td>Llanta derecha se esta bajando</td>
-      <td><button class="btn btn-success"><i class="fa-solid fa-plus"></i></button><button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></td>
-    </tr>
-    <tr>
-      <td>20-07-2023</td>
-      <td>01</td>
-      <td>PDY7666</td>
-      <td>200.000</td>
-      <td>Sin novedades</td>
-      <td>300.000</td>
-      <td>Llanta derecha se esta bajando</td>
-      <td><button class="btn btn-success"><i class="fa-solid fa-plus"></i></button><button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></td>
+      <td><button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editarKilometraje"><i class="fa-solid fa-pencil"></i></button><button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button></td>
     </tr>
   </tbody>
 </table>
+
+<div class="modal fade" id="editarKilometraje" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Registro de kilometraje</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <select class="form-control" name="vehiculo" id="vehiculo">
+            <option value="">Seleccione su vehiculo</option>
+            <option value="01">01 - PDY7077</option>
+            </select>
+<label>Kilometraje de inicio:</label>
+<input type="number" class="form-control">
+<label>Estado/Detalle/Observación del vehiculo:</label>
+<textarea cols="2" rows="4" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

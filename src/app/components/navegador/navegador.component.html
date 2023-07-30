@@ -1,12 +1,20 @@
 
-<div class="container">
-            <ul class="main-menu">
-                <li [routerLinkActive]="['active']"><a [routerLink]="['/usuario']">Usuario</a></li>
-                <li [routerLinkActive]="['active']"><a [routerLink]="['/login']">Login</a></li>
-                <li [routerLinkActive]="['active']"><a [routerLink]="['/vehiculo']">Vehiculo</a></li>
-                <li [routerLinkActive]="['active']"><a [routerLink]="['/chofer']">Chofer</a></li>
-            </ul>
-</div>
-
+    <nav>
+      <a [routerLink]="['/chofer']">Inicio</a>
+      <a [routerLink]="['/kilometraje']">Kilometraje</a>
+      <a [routerLink]="['/combustible']">Combustible</a>
+      <div id="indicator"></div>
   
-
+      <div class="dropdown" (mouseenter)="toggleMenu()" (mouseleave)="toggleMenu()">
+          <span>Usuario</span>
+          <div *ngIf="isMenuOpen" class="dropdown-content">
+            <ul>
+              <li><a [routerLink]="['/chofer']">Chofer</a></li>
+              <li><a [routerLink]="['/administrador']">Administrador</a></li>
+            </ul>
+            
+            
+          </div>
+        </div>
+    </nav>
+ 

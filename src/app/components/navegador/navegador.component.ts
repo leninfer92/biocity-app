@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./navegador.component.css']
 })
 export class NavegadorComponent {
-
+isMenuOpen: boolean =false;
+toggleMenu(){
+  this.isMenuOpen=!this.isMenuOpen;
+}
 }

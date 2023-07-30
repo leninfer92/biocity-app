@@ -4,19 +4,24 @@ import { Routes,RouterModule } from "@angular/router";
 import { UsuarioComponent } from "./components/usuario/usuario.component";
 import { VehiculoComponent } from "./components/vehiculo/vehiculo.component";
 import { ErrorComponent } from "./components/error/error.component";
-import { LoginComponent } from "./components/login/login.component";
 import { ChoferComponent } from "./components/chofer/chofer.component";
 import { KilometrajeComponent } from "./components/kilometraje/kilometraje.component";
 import { CombustibleComponent } from "./components/combustible/combustible.component";
 import { AdministradorComponent } from "./components/administrador/administrador.component";
+import { ValidarCombustibleComponent } from "./components/validar-combustible/validar-combustible.component";
+import { ReporteKilometrajeComponent } from "./components/reporte-kilometraje/reporte-kilometraje.component";
+import { EstadoVehiculoComponent } from "./components/estado-vehiculo/estado-vehiculo.component";
 const appRoutes:Routes=[
-    {path: 'login', component: LoginComponent},
+    {path: '', component: ChoferComponent},
+    {path: 'chofer', component: ChoferComponent},
     {path: 'usuario', component: UsuarioComponent},
     {path: 'vehiculo', component: VehiculoComponent},
-    {path: 'chofer', component: ChoferComponent},
     {path: 'kilometraje', component: KilometrajeComponent},
     {path: 'combustible', component: CombustibleComponent},
     {path: 'administrador', component: AdministradorComponent},
+    {path: 'validar-combustible', component: ValidarCombustibleComponent},
+    {path: 'reporte-kilometraje', component: ReporteKilometrajeComponent},
+    {path: 'estado-vehiculo', component: EstadoVehiculoComponent},
     {path: '**', component: ErrorComponent},
 ];
 

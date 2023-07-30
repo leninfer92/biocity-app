@@ -17,6 +17,8 @@ import { CombustibleComponent } from './components/combustible/combustible.compo
 import { AdministradorComponent } from './components/administrador/administrador.component';
 import { ValidarCombustibleComponent } from './components/validar-combustible/validar-combustible.component';
 import { EstadoVehiculoComponent } from './components/estado-vehiculo/estado-vehiculo.component';
+import { ReporteKilometrajeComponent } from './components/reporte-kilometraje/reporte-kilometraje.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { EstadoVehiculoComponent } from './components/estado-vehiculo/estado-veh
     CombustibleComponent,
     AdministradorComponent,
     ValidarCombustibleComponent,
-    EstadoVehiculoComponent
+    EstadoVehiculoComponent,
+    ReporteKilometrajeComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
