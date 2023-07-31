@@ -1,43 +1,13 @@
-body {
-	height: 1500px;
-	
+.dropdown-menu {
+    background-color: black;
   }
   
-  .offset {
-	margin-top: 0;
-	padding-top: 270px;
-	text-align: center;
-	transition: .3s;
+  .dropdown-item {
+    color: white;
   }
   
-  .header {
-	position: fixed;
-	width: 100%;
-	height: 250px;
-	font-weight: bold;
-	text-align: center;
-	background: url(https://cdn.pixabay.com/photo/2019/11/22/17/15/drop-of-water-4645249_1280.jpg);
-	transition: .3s;
-	
-	&.small {
-	  height: 70px;
-	  box-shadow: 0 0 5px rgba(black, .2);
-	  & ~ .offset {
-		padding-top: 140px;
-	  }
-	  .header_logo {
-		padding-top: 10px;
-		font-size: 20px;
-		text-shadow: none;
-	  }
-	}
+  .dropdown-item:hover {
+    background-color: white;
+    color: black;
   }
   
-  .header_logo {
-	font-family: 'Oswald', sans-serif;
-	margin: 0;
-	padding-top: 0px;
-	font-size: 50px;
-	text-shadow: 3px 4px rgba(black, .1);
-	transition: .3s;
-  }
