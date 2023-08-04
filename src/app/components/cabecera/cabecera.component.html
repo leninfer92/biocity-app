@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand navbar-light bg-dark">
+<nav class="navbar navbar-expand navbar-light">
   <div class="container">
     <a class="navbar-brand"
       ><img src="../../../assets/img/logo.png" width="150px"
     /></a>
     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-      <li class="nav-item">
+      <li class="nav-item" [routerLinkActive]="['seleccionado']">
         <a
           class="nav-link active text-light"
           [routerLink]="['/chofer']"
@@ -12,7 +12,7 @@
           >Inicio</a
         >
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [routerLinkActive]="['seleccionado']">
         <a
           class="nav-link active text-light"
           [routerLink]="['/kilometraje']"
@@ -20,7 +20,7 @@
           >Kilometraje</a
         >
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [routerLinkActive]="['seleccionado']">
         <a
           class="nav-link active text-light"
           [routerLink]="['/combustible']"

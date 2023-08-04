@@ -7,7 +7,6 @@ import { ErrorComponent } from "./components/error/error.component";
 import { ChoferComponent } from "./components/chofer/chofer.component";
 import { KilometrajeComponent } from "./components/kilometraje/kilometraje.component";
 import { CombustibleComponent } from "./components/combustible/combustible.component";
-import { AdministradorComponent } from "./components/administrador/administrador.component";
 import { ValidarCombustibleComponent } from "./components/validar-combustible/validar-combustible.component";
 import { ReporteKilometrajeComponent } from "./components/reporte-kilometraje/reporte-kilometraje.component";
 import { EstadoVehiculoComponent } from "./components/estado-vehiculo/estado-vehiculo.component";
@@ -18,7 +17,6 @@ const appRoutes:Routes=[
     {path: 'vehiculo', component: VehiculoComponent},
     {path: 'kilometraje', component: KilometrajeComponent},
     {path: 'combustible', component: CombustibleComponent},
-    {path: 'administrador', component: AdministradorComponent},
     {path: 'validar-combustible', component: ValidarCombustibleComponent},
     {path: 'reporte-kilometraje', component: ReporteKilometrajeComponent},
     {path: 'estado-vehiculo', component: EstadoVehiculoComponent},
