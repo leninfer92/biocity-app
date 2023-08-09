@@ -1,24 +1,32 @@
 
-<h1>Registro de vehiculo</h1>
+
 <div class="container">
-    
+  <br>
+  <h1>Registro de vehiculo</h1>    
       
-  
-    
+  <div class="card text-center">
+    <div class="card-body">
+      <p class="card-text">
+        Para registrar el vehiculo dar clic en el boton Registrar.
+      </p>
       <button
-        style="margin-right: 10px;"
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#modalId"
-        (click)="showModalRegistrate()"
-      >
-        Registrar
-      </button>
+      style="margin-right: 10px;"
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#modalId"
+      (click)="showModalRegistrate()"
+    >
+      Registrar
+    </button>
+    
+    <a class="btn btn-secondary" [routerLink]="['/administrador']" role="button"
+      >Salir</a
+    >
+    </div>
+  </div>
+    
       
-      <a class="btn btn-danger" [routerLink]="['/administrador']" role="button"
-        >Volver</a
-      >
     
   
   <div
@@ -32,7 +40,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+          <h5 class="modal-title" id="modalTitleId">Registro de vehiculo</h5>
           <button
             type="button"
             class="btn-close"
@@ -104,7 +112,7 @@
                 class="form-select"
                 [(ngModel)]="editingCarInfo.tipo_vehiculo"
               >
-                <option>Selección opción</option>
+                <option selected>Seleccione</option>
                 <option value="Compactador">Compactador</option>
                 <option value="Cajon abierto">Cajon abierto</option>
                 <option value="Tanquero">Tanquero</option>
@@ -149,7 +157,8 @@
           <th>Fecha de compra</th>
           <th>Modelo</th>
           <th>Tipo de vehiculo</th>
-          <th>Opciones</th>
+          <th>Editar</th>
+          <th>Eliminar</th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
@@ -170,8 +179,8 @@
               data-bs-target="#editarVehiculo"
               (click)="showModal(car)"
             >
-              <i class="fa-solid fa-pencil"></i></button
-            ><button class="btn btn-danger" (click)="deleteCar(car.id)">
+              <i class="fa-solid fa-pencil"></i></button></td>
+              <td><button class="btn btn-danger" (click)="deleteCar(car.id)">
               <i class="fa-solid fa-trash"></i>
             </button>
           </td>
