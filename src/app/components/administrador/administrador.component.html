@@ -1,46 +1,55 @@
-<hr>
 <div class="container">
-    <div class="row">
-        <div class="col-md-auto">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../../../assets/img/recolector.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Vehiculos</h5>
-                  <p class="card-text">El total de vehiculos es: {{countCars}}</p>
-                  <a [routerLink]="['/vehiculo']" class="btn btn-primary">Registrar</a>
-                  
-                </div>
-              </div>
-          </div>
-      <div class="col-md-auto">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="../../../assets/img/combustible.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Combustible</h5>
-            <p class="card-text">Total de ordenes de combustible: {{countOrders}}</p>
-            <a [routerLink]="['/validar-combustible']" class="btn btn-secondary">Validar</a>
-          </div>
-        </div>
+  <br>
+<h1>Menu principal del administrador</h1>
+<br/>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">Vehiculos</h5>
+        <p class="card-text">Registro de vehiculos.</p>
       </div>
-      <div class="col-md-auto">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="../../../assets/img/kilometraje.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Consulta de registro de kilometraje</h5>
-            <p class="card-text">Consultar el registro de kilometraje de los vehiculos</p>
-            <a [routerLink]="['/reporte-kilometraje']" class="btn btn-info">Consultar</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-auto">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="../../../assets/img/mecanica.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Estado de los vehiculos</h5>
-            <p class="card-text">Consultar el estado de los vehiculos</p>
-            <a [routerLink]="['/estado-vehiculo']" class="btn btn-dark">Consultar</a>
-          </div>
-        </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary" [routerLink]="['/vehiculo']">Registrar</button>
       </div>
     </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">Combustible</h5>
+        <p class="card-text">Validación de combustible.</p>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-secondary" [routerLink]="['/validar-combustible']">Validar</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">Kilometraje</h5>
+        <p class="card-text">Reporte de kilometraje.</p>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-warning" [routerLink]="['/reporte-kilometraje']">Ingresar</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">Novedades</h5>
+        <p class="card-text">Reporte del estado de los vehiculos.</p>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-danger" [routerLink]="['/estado-vehiculo']">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
